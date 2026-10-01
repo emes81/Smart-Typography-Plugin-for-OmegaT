@@ -22,7 +22,7 @@ Bundled profiles in 0.1.0: English, German, German (Switzerland), French. Unsupp
 
 ## Install
 
-Download [`Smart-Typography-Plugin-for-OmegaT-0.1.0.jar`](dist/Smart-Typography-Plugin-for-OmegaT-0.1.0.jar), then install it through OmegaT's plugin installer or place it in the OmegaT user `plugins` directory. Restart OmegaT after installation.
+Build the plugin JAR with Gradle, then install it through OmegaT's plugin installer or place it in the OmegaT user `plugins` directory. Restart OmegaT after installation.
 
 ## Build
 
