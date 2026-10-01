@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.omegat.community'
+version = '0.1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.omegat:omegat:6.1.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.11.4'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jar {
+    manifest {
+        attributes(
+            'OmegaT-Plugins': 'org.omegat.community.typography.TypographyPlugin',
+            'Plugin-Name': 'Typography',
+            'Plugin-Version': project.version,
+            'Plugin-Author': 'Community contributors',
+            'Plugin-Description': 'Context-aware typographic punctuation while typing in OmegaT.',
+            'Plugin-Link': 'https://github.com/emes81/Smart-Typography-Plugin-for-OmegaT',
+            'Plugin-License': 'GNU General Public License version 3 or later',
+            'Plugin-Category': 'miscellaneous'
+        )
+    }
+}
