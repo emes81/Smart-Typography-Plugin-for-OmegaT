@@ -1,4 +1,4 @@
-# OmegaT Typography
+# Smart Typography for OmegaT
 
 Context-aware typographic punctuation for OmegaT 6.1.x.
 
